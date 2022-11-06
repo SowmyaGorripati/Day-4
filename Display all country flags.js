@@ -1,4 +1,4 @@
-Use the rest api and display the all country flag in console.
+//Use the rest api and display the all country flag in console.
 
 Var = new XMLHttpRequest();
 url.open =('GET',"https://restcountries.eu/rest/v2/all");
