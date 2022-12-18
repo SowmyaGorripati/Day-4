@@ -134,3 +134,41 @@ let actual_cost=100
 let Sold_cost=99
 console.log('discount is '+actual_cost-Sold_cost)
 
+//Given their radius of a circle and find its diameter, circumference and area.
+function circle(radius)
+{
+ this.radius = radius;
+ // area method
+ this.area = function () 
+ {
+ return Math.PI * this.radius * this.radius;
+ };
+ // perimeter method
+ this.perimeter = function ()
+ {
+ return 2*Math.PI*this.radius;
+ };
+}
+var c = new circle(3);
+console.log('Area =', c.area().toFixed(2));
+console.log('perimeter =', c.perimeter().toFixed(2));
+
+//Given two numbers and perform all arithmetic operations
+
+Math.round(a) //Returns a rounded to its nearest integer.
+Math.ceil(b) //Returns b rounded up to its nearest integer.
+Math.floor(c) //Returns c rounded down to its nearest integer.
+Math.trunc(d) //Returns the integer part of d.
+Math.round(4.6) //returns the nearest integer.//o.p=5
+Math.ceil(5.9) //returns the value of x rounded up to its nearest integer://o.p=6
+Math.floor(4.2) //returns the value of x rounded down to its nearest integer://0.p=4
+Math.pow(5, 5) //returns the value of x to the power of y://o.p=3125//5^5
+Math.sqrt(25) //returns the square root of x://o.p=5
+Math.min() and Math.max() //can be used to find the lowest or highest value in a list of arguments
+Math.random() //returns a random number between 0 (inclusive), and 1 (Exclusive)
+Math.log(f) //returns the natural logarithm of x.
+Math.log2(g)// returns the base 2 logarithm of x.
+Math.log10(h) //returns the base 10 logarithm of x.
+Math.abs(i) //returns the absolute (positive) value of x:
+Math.sin(x) //returns the sine (a value between -1 and 1) of the angle x (given in radians).
+Math.cos(x) //returns the cosine (a value between -1 and 1) of the angle x (given in radians).
