@@ -172,3 +172,50 @@ Math.log10(h) //returns the base 10 logarithm of x.
 Math.abs(i) //returns the absolute (positive) value of x:
 Math.sin(x) //returns the sine (a value between -1 and 1) of the angle x (given in radians).
 Math.cos(x) //returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+
+//TASK-3
+
+//Write a loop that makes seven calls to console.log to output the following triangle:
+let n = 7;
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+
+//Iterate through the string array and print it contents
+//Arrays
+//write a code to count the elements in the array . Don’t use length property
+var myarray=[11,22,33,44,55];
+let count=0;
+for(let i = 0; i<=myarray.length; i++){
+    count=count+1;
+}
+console.log(count);
+
+let foods=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t'];
+console.log(foods[4]);//5th fav food
+console.log(foods.length);//length of food array
+
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+friends[0]="Munnabai";
+console.log(friends);
+
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+function dataHandling(input){
+    for (var i = 0; i < input.length; i++) {
+        //for(var j=0; j<i.length;j++){
+            if(i=="CaptianAmerica"){
+                break;
+            }
+            else{
+                console.log(friends)
+            }
+        //}
+        
+    }
+}
+dataHandling(friends);
